@@ -16,7 +16,7 @@ def write(path, text):
 def process(path):
 	text = read(path)
 	os.chdir( '/'.join( path.split('/')[0:-2] ) )
-	text = re.sub(IMPORT_REGEXP, lambda x: read(x))
+	text = re.sub(IMPORT_REGEXP, lambda x: read(x), text)
 	return text
 	
 def build(src, result):
