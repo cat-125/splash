@@ -9,13 +9,13 @@ def read(path):
 	return text
 
 def write(path, text):
-		file = open(path, "w")
-		file.write(text)
-		file.close()
+	file = open(path, "w")
+	file.write(text)
+	file.close()
 
 def process(path):
 	text = read(path)
-	os.chdir(path)
+	os.chdir( '/'.join( path.split('/')[0:-2] ) )
 	text = re.sub(IMPORT_REGEXP, lambda x: read(x))
 	return text
 	
