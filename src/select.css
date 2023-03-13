@@ -1,0 +1,19 @@
+.select {
+	width: 100%;
+	padding: 0.8em 1em;
+	margin: 0;
+	border-radius: 1rem;
+	border: 1px solid var(--border-color);
+	background: var(--g0);
+	outline: none;
+	transition: .2s;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flexbox;
+	width: 100%;
+	color: currentColor;
+}
+
+.select:focus {
+	border-color: var(--primary);
+}

@@ -1,0 +1,28 @@
+:root {
+	--primary: #0090FF;
+	--secondary: #E9E9E9;
+	--tertiary: #F3F2F8;
+	--red: #F74035;
+	--border-color: #eee;
+	--g15: #000;
+	--g14: #111;
+	--g13: #222;
+	--g12: #333;
+	--g11: #444;
+	--g10: #555;
+	--g9: #666;
+	--g8: #777;
+	--g7: #888;
+	--g6: #999;
+	--g5: #aaa;
+	--g4: #bbb;
+	--g3: #ccc;
+	--g2: #fff;
+	--g1: #eee;
+	--g0: #fff;
+	--o0: #fff7;
+	--o5: #6667;
+	--o10: #0002;
+	--panel: #fff;
+	--disabled-opacity: .5;
+}

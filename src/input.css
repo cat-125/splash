@@ -1,0 +1,56 @@
+.input {
+	display: -webkit-inline-flex;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	position: relative;
+	padding: 0;
+	margin: 1em 0;
+	border-radius: 1rem;
+	border: none;
+	background: var(--g0);
+	overflow: hidden;
+}
+
+.input>input {
+	display: block;
+	-webkit-box-flex: 1;
+	-ms-flex: 1 0 auto;
+	flex: 1 0 auto;
+	width: 1%;
+	padding: 1em 1.5em;
+	margin: 0;
+	border-radius: 1rem;
+	outline: none;
+	border: 1px solid var(--border-color);
+	transition: .1s;
+	overflow: visible;
+	background: #0000;
+	caret-color: var(--primary)
+}
+
+.input>input:focus {
+	border-color: var(--primary);
+}
+
+.fluid.input {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flexbox;
+}
+
+.fluid.input>input {
+	width: 0 !important;
+}
+
+.button.input>input {
+	border-radius: 1rem 0 0 1em;
+}
+
+.button.input>.btn {
+	border-radius: 0 1em 1em 0;
+	min-height: 100%;
+	margin: 0;
+	padding: .9em;
+	display: grid;
+	place-items: center;
+}

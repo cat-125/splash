@@ -1,0 +1,28 @@
+.fixed {
+	position: fixed;
+}
+
+.fixed.top {
+	top: 1em;
+}
+
+.fixed.right {
+	right: 1em;
+}
+
+.fixed.bottom {
+	bottom: 1em;
+}
+
+.fixed.left {
+	left: 1em;
+}
+
+.float-right {
+	float: right;
+	align-self: right;
+	place-self: right;
+	justify-self: right;
+	text-align: right;
+	margin-right: 0;
+}

@@ -1,0 +1,39 @@
+.selectmenu {
+	width: 100% !important;
+	max-width: 100% !important;
+	overflow: hidden;
+	border-radius: 0.5rem;
+	background: var(--secondary);
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 0.1em;
+	align-content: space-evenly;
+	justify-content: space-evenly;
+	padding: 0;
+	margin: 0;
+	user-select: none;
+}
+
+.selectmenu>button {
+	margin: 0.2em 0;
+	background: #0000;
+	color: currentColor;
+	border: none;
+	outline: none;
+	padding: 0.3em;
+	border-radius: 0.5rem;
+	transition: .2s;
+}
+
+.selectmenu>button:first-child {
+	margin-left: 0.2em;
+}
+
+.selectmenu>button:last-child {
+	margin-right: 0.2em;
+}
+
+.selectmenu>button.active {
+	background: var(--g2);
+	font-weight: 450;
+}

@@ -1,0 +1,8 @@
+.segment {
+	border-radius: 1rem;
+	background: var(--panel);
+	display: block;
+	margin: 1em;
+	padding: 1em;
+	box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.5);
+}

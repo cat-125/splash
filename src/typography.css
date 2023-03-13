@@ -1,0 +1,31 @@
+/****** Header ******************************/
+.header {
+	font-size: 1.5em;
+	margin: 1rem 0;
+}
+
+h2.header {
+	font-size: 1.4em;
+}
+
+h3.header {
+	font-size: 1.3em;
+}
+
+h4.header {
+	font-size: 1.2em;
+}
+
+h5.header {
+	font-size: 1.1em;
+}
+
+h6.header {
+	font-size: 1em;
+}
+
+/****** Hint *******************************/
+.hint {
+	font-size: 0.8em;
+	opacity: .5;
+}
