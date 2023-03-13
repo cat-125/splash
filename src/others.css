@@ -1,0 +1,65 @@
+.border-radius {
+	border-radius: 1rem;
+}
+
+.o-fluid {
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.margin-0 {
+	margin: 0;
+}
+
+.margin {
+	margin: 1em;
+}
+
+.padding {
+	padding: 1em;
+}
+
+.padding-0 {
+	padding: 0;
+}
+
+.centered {
+	text-align: center;
+	align-self: center;
+	align-items: center;
+	align-content: center;
+	box-align: center;
+	-moz-box-align: center;
+}
+.space {
+	height: 0;
+	padding: 0;
+	margin: 2em;
+}
+
+.small.space {
+	margin: 1em;
+}
+
+.medium.space {
+	margin: 2em;
+}
+
+.big.space {
+	margin: 4em;
+}
+
+.large.space {
+	margin: 6em;
+}
+
+/* Styles */
+.bg-blur,
+.blur {
+	backdrop-filter: blur(7px);
+}
+
+.theme-bg {
+	background: var(--o0);
+}

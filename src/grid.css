@@ -1,0 +1,47 @@
+.grid {
+	display: grid;
+	justify-items: stretch;
+	align-items: center;
+	justify-content: space-around;
+	align-content: stretch;
+}
+
+.cols-2 {
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.cols-3 {
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.cols-4 {
+	grid-template-columns: repeat(4, 1fr);
+}
+
+.grid>.col-2 {
+	grid-column: span 2;
+}
+
+.grid>.col-3 {
+	grid-column: span 3;
+}
+
+.grid>.col-4 {
+	grid-column: span 4;
+}
+
+.grid>* {
+	padding: auto;
+	margin: 0;
+}
+
+.grid.gap-1 {
+	grid-gap: 1em;
+	padding: 0 1em;
+}
+
+@media screen and (max-width: 900px) {
+	.grid.stackable {
+		grid-template-columns: 1fr;
+	}
+}
