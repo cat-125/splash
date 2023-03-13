@@ -16,6 +16,7 @@
 @import url('./input.css');
 @import url('./select.css');
 @import url('./selectmenu.css');
+@import url('./badge.css');
 
 /* VIEWS ************************************/
 @import url('./container.css');

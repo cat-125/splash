@@ -337,6 +337,24 @@ h6.header {
 	background: var(--g2);
 	font-weight: 450;
 }
+/* SOURCE: ./badge.css */
+.badge {
+	--color: red;
+	border-radius: 1em;
+	font-size: 0.4em;
+	vertical-align: middle;
+	background: var(--color);
+	color: #fff;
+	padding: 0.3em 0.6em;
+	display: inline-block;
+}
+
+.badge.outline {
+	--color: gray;
+	color: var(--color);
+	border: 1px solid var(--color);
+	background: transparent;
+}
 
 /* VIEWS ************************************/
 /* SOURCE: ./container.css */

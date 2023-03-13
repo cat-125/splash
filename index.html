@@ -5,11 +5,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Splash demo</title>
-	<script src="/js/splash.js"></script>
-	<script src="/js/mirror.js"></script>
-	<script src="/js/swidgets.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
 	<link rel="stylesheet" href="/src/main.css">
+	<!-- link rel="stylesheet" href="build.min.css" -->
 </head>
 
 <body class="bg-tertiary">
@@ -61,18 +58,19 @@
 		<div class="segment">
 			Segment
 		</div>
-		<div class="btn segment">Segment button</div>
-
+		<div class="btn segment">
+			Segment button
+		</div>
 
 		<div class="card">
-			<div class="header">Dialogs</div>
+			<div class="header">Dialogs <span class="outline badge">JS only</span></div>
 			<div class="content">
 				Test dialog:
 			</div>
 			<div class="buttons">
-				<button class="primary btn" id="d-btn">Custom</button>
-				<button class="btn" id="a-btn">Alert</button>
-				<button class="btn" id="c-btn">Confirm</button>
+				<button class="primary btn" disabled>JS Required</button>
+				<!-- button class="btn" id="a-btn">Alert</button>
+				<button class="btn" id="c-btn">Confirm</button -->
 			</div>
 		</div>
 
@@ -88,9 +86,9 @@
 			</div>
 			<div class="buttons"></div>
 		</div>
-		
+
 		<div class="card">
-			<div class="header">Select menu</div>
+			<div class="header">Select menu <span class="outline badge">JS only</span></div>
 			<div class="content">
 				<select name="" id="" class="select">
 					<option value="1">1</option>
@@ -103,7 +101,7 @@
 				</div>
 			</div>
 		</div>
-		
+
 		<div class="card">
 			<div class="header">List</div>
 			<div class="content">
@@ -127,7 +125,7 @@
 		</div>
 	</div>
 
-	<script src="/js/dialog.min.js"></script>
+	<!--script src="/js/dialog.min.js"></script>
 	<script>
 		$('#d-btn').click(() => {
 			new Dialog('dialog')
@@ -144,7 +142,7 @@
 			Dialog.confirm('You are seeing confirm dialog', 'Confirm action')
 				.then(console.log);
 		});
-	</script>
+	</script-->
 </body>
 
 </html>
