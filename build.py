@@ -2,7 +2,8 @@ import os, re
 from os.path import abspath
 
 IMPORT_REGEXP = re.compile(r"@import url\(\'(.+)\'\);")
-MINIMIZE_REGEXP = re.compile(r"(\n\t*)|(/\*(.|\n)+?\*/)")
+MINIMIZE_REGEXP = re.compile(r"(\n\s*)|(/\*(.|\n)+?\*/)")
+MINIMIZE_REGEXP2 = re.compile(r"(\W)\s|\s(\{)")
 HOME_DIR = os.getcwd()
 
 def read(path):
@@ -24,6 +25,7 @@ def process(path):
 	text = read(path)
 	os.chdir( filedir )
 	text = re.sub(IMPORT_REGEXP, lambda x: process(x.group(1)), text)
+	text = f'/* SOURCE: {path} */\n' + text
 	return text
 	
 def build(src, result):
@@ -36,6 +38,7 @@ def minimize(src, result):
 	print('MINIMIZE: ' + src)
 	text = read(src)
 	text = re.sub(MINIMIZE_REGEXP, '', text)
+	text = re.sub(MINIMIZE_REGEXP2, lambda x: x.group(1) or x.group(2), text)
 	write(result, text)
 
 if __name__ == "__main__":
