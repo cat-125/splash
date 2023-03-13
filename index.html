@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Splash demo</title>
+	<script src="/js/splash.js"></script>
+	<script src="/js/mirror.js"></script>
+	<script src="/js/swidgets.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+	<link rel="stylesheet" href="/src/main.css">
+</head>
+
+<body class="bg-tertiary">
+	<div class="fluid container">
+		<div class="card">
+			<div class="content">
+				<h1 class="header">Header (h1)</h1>
+				<h2 class="header">Header h2</h2>
+				<h3 class="header">Header h3</h3>
+				<h4 class="header">Header h4</h4>
+				<h5 class="header">Header h5</h5>
+				<h6 class="header">Header h6</h6>
+			</div>
+		</div>
+		<div class="card">
+			<div class="content">
+				<div class="s-xs">s-xs</div>
+				<div class="s-s">s-s</div>
+				<div class="s-m">s-m</div>
+				<div class="s-l">s-l</div>
+				<div class="s-xl">s-xl</div>
+				<div class="s-xxl">s-xxl</div>
+				<div class="s-xxxl">s-xxxl</div>
+				<div class="s-xxxxl">s-xxxxl</div>
+			</div>
+		</div>
+		<div class="card">
+			<div class="content">
+				<button class="btn">Button</button><br>
+				<button class="negative btn">Negative button</button><br>
+				<button class="primary btn">Primary button</button><br>
+
+				<button class="compact primary btn">Compact</button><br>
+				<button class="fluid primary btn">Fluid</button>
+				<button class="circular primary btn">Circular</button><br>
+				<button class="icon primary btn"><i data-feather="square"></i></button> Icon<br>
+			</div>
+		</div>
+
+		<div class="card">
+			<div class="header">Cards</div>
+			<div class="content">Content</div>
+			<div class="buttons">
+				<button class="btn">Buttons</button>
+				<button class="primary btn">Primary</button>
+			</div>
+		</div>
+
+		<div class="segment">
+			Segment
+		</div>
+		<div class="btn segment">Segment button</div>
+
+
+		<div class="card">
+			<div class="header">Dialogs</div>
+			<div class="content">
+				Test dialog:
+			</div>
+			<div class="buttons">
+				<button class="primary btn" id="d-btn">Custom</button>
+				<button class="btn" id="a-btn">Alert</button>
+				<button class="btn" id="c-btn">Confirm</button>
+			</div>
+		</div>
+
+		<div class="card">
+			<div class="header">Input</div>
+			<div class="content">
+				<div class="input">
+					<input type="text">
+				</div>
+				<div class="fluid input">
+					<input type="text">
+				</div>
+			</div>
+			<div class="buttons"></div>
+		</div>
+		
+		<div class="card">
+			<div class="header">Select menu</div>
+			<div class="content">
+				<select name="" id="" class="select">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+				</select>
+				<div class="selectmenu">
+					<button>Select</button>
+					<button>Menu</button>
+				</div>
+			</div>
+		</div>
+		
+		<div class="card">
+			<div class="header">List</div>
+			<div class="content">
+				<h3 class="header">Normal list</h3>
+				<div class="list">
+					<div class="item">Item 1</div>
+					<div class="item">Item 2</div>
+					<div class="btn item">Button item</div>
+					<div class="negative btn item">Negative</div>
+					<div class="item">Item 3</div>
+				</div>
+				<h3 class="header">Divided list</h3>
+				<div class="divided list">
+					<div class="item">Item 1</div>
+					<div class="item">Item 2</div>
+					<div class="btn item">Button item</div>
+					<div class="negative btn item">Negative</div>
+					<div class="item">Item 3</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="/js/dialog.min.js"></script>
+	<script>
+		$('#d-btn').click(() => {
+			new Dialog('dialog')
+				.setTitleRaw('Dialog')
+				.setContent('Content')
+				.addButton('Button')
+				.addButton('Close', d => d.close(), 'primary')
+				.show();
+		});
+		$('#a-btn').click(() => {
+			Dialog.alert('Alert text', 'Alert');
+		});
+		$('#c-btn').click(() => {
+			Dialog.confirm('You are seeing confirm dialog', 'Confirm action')
+				.then(console.log);
+		});
+	</script>
+</body>
+
+</html>
