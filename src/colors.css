@@ -1,0 +1,69 @@
+/* Text */
+.t-black {
+	color: #000;
+}
+
+.t-white {
+	color: #fff;
+}
+
+.t-primary {
+	color: var(--primary);
+}
+
+.t-secondary {
+	color: #888;
+}
+
+.t-red {
+	color: var(--red);
+}
+
+/* Background */
+.bg-black {
+	background: #000;
+}
+
+.bg-white {
+	background: #fff;
+}
+
+.bg-primary {
+	background: var(--primary);
+}
+
+.bg-secondary {
+	background: var(--secondary);
+}
+
+.bg-tertiary {
+	background: var(--tertiary);
+}
+
+.bg-red {
+	background: var(--red);
+}
+
+.bg-g0 {
+	background: var(--g0)
+}
+
+.bg-g1 {
+	background: var(--g1)
+}
+
+.bg-g2 {
+	background: var(--g2)
+}
+
+.bg-g3 {
+	background: var(--g3)
+}
+
+.bg-g4 {
+	background: var(--g4)
+}
+
+.bg-g5 {
+	background: var(--g5)
+}

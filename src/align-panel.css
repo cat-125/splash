@@ -1,0 +1,11 @@
+.align-panel {
+	display: grid !important;
+	justify-items: auto;
+	justify-content: space-between;
+	align-items: center;
+	align-content: stretch;
+}
+
+.align-panel>.right {
+	justify-self: end;
+}

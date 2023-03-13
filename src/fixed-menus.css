@@ -1,0 +1,39 @@
+.top-menu,
+.bottom-menu {
+	right: 0;
+	left: 0;
+	z-index: 1000;
+	padding: 0.1em;
+	position: fixed;
+	background: var(--o0);
+	backdrop-filter: blur(16px);
+	text-align: center;
+	align-self: center;
+	align-items: center;
+	align-content: center;
+	box-align: center;
+	-moz-box-align: center;
+}
+
+.top-menu>.btn {
+	padding: 0.3em;
+	margin: 0;
+}
+
+.top-menu {
+	top: 0;
+	border-bottom: 1px solid var(--border-color);
+}
+
+.top-menu:not(.raw) {
+	display: grid;
+	justify-items: auto;
+	justify-content: space-between;
+	align-items: center;
+	align-content: stretch;
+}
+
+.bottom-menu {
+	bottom: 0;
+	border-top: 1px solid var(--border-color);
+}
