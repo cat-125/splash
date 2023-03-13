@@ -12,6 +12,7 @@ def read(path):
 	return text
 
 def write(path, text):
+	print('WRITE: ' + path)
 	file = open(path, "w")
 	file.write(text)
 	file.close()
