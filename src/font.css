@@ -1,5 +1,3 @@
-@import url('../font/font.css');
-
 body,
 div,
 button,
@@ -15,7 +13,7 @@ h4,
 h5,
 h6,
 .ui {
-	font-family: "SF Pro Display", 'Segoe UI', Arial, sans-serif !important;
+	font-family: -apple-system-headline, -apple-system-caption1, -apple-system-caption2, -apple-system, BlinkMacSystemFont, sans-serif !important;
 	font-weight: 400;
 }
 
@@ -28,5 +26,6 @@ h5,
 h6,
 b,
 strong {
+	font-family: -apple-system-headline, -apple-system-caption1, -apple-system-caption2, -apple-system, BlinkMacSystemFont, sans-serif !important;
 	font-weight: 600;
 }
