@@ -27,7 +27,7 @@ def process(path):
 	return text
 	
 def build(src, result):
-	print('BUILD: ' + src)
+	print('BUILD: ' + result)
 	processed = process(src)
 	os.chdir(HOME_DIR)
 	write(result, processed)
