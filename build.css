@@ -16,7 +16,7 @@ body {
 	padding: 0;
 	overflow-x: hidden;
 	width: 100vw;
-	background: var(--g0);
+	background: var(--themeBackground);
 	z-index: 0;
 	transition: 0;
 }
@@ -84,25 +84,10 @@ section {
 	--tertiary: #F3F2F8;
 	--red: #F74035;
 	--border-color: #eee;
-	--g15: #000;
-	--g14: #111;
-	--g13: #222;
-	--g12: #333;
-	--g11: #444;
-	--g10: #555;
-	--g9: #666;
-	--g8: #777;
-	--g7: #888;
-	--g6: #999;
-	--g5: #aaa;
-	--g4: #bbb;
-	--g3: #ccc;
-	--g2: #fff;
-	--g1: #eee;
-	--g0: #fff;
-	--o0: #fff7;
-	--o5: #6667;
-	--o10: #0002;
+	--themeBackground: #fff;
+	--selectMenu-activeButtonColor: #fff;
+	--primaryDimmerColor: #fff7;
+	--activeButtonColor: #0002;
 	--panel: #fff;
 	--disabled-opacity: .5;
 }
@@ -163,8 +148,7 @@ h6.header {
 }
 
 .btn:active {
-	/*opacity: .5;*/
-	--color: var(--o10);
+	--color: var(--activeButtonColor);
 	transform: scale(0.95);
 }
 
@@ -236,7 +220,7 @@ h6.header {
 	margin: 1em 0;
 	border-radius: 1rem;
 	border: none;
-	background: var(--g0);
+	background: var(--themeBackground);
 	overflow: hidden;
 }
 
@@ -288,9 +272,10 @@ h6.header {
 	width: 100%;
 	padding: 0.8em 1em;
 	margin: 0;
+	margin-bottom: 1em;
 	border-radius: 1rem;
 	border: 1px solid var(--border-color);
-	background: var(--g0);
+	background: var(--themeBackground);
 	outline: none;
 	transition: .2s;
 	display: -webkit-box;
@@ -340,7 +325,7 @@ h6.header {
 }
 
 .selectmenu>button.active {
-	background: var(--g2);
+	background: var(--selectMenu-activeButtonColor);
 	font-weight: 450;
 }
 /* SOURCE: ./badge.css */
@@ -398,22 +383,24 @@ h6.header {
 	border-radius: 0;
 }
 
+.list>.btn:active {
+	opacity: .6;
+	background: transparent;
+	transform: none;
+}
+
 .divided.list>.item {
 	margin-bottom: 1px;
 	background: transparent;
-	border-bottom: var(--border-color) 1px solid;
+	border-top: var(--border-color) 1px solid;
 }
 
-.divided.list>.btn:active {
-	opacity: .85;
-}
-
-.divided.list>.item:last-child {
+.divided.list>.item:first-child {
 	border: none;
 }
 
 .compact.list>.item {
-	padding: 0em 0;
+	padding: 0 0;
 }
 /* SOURCE: ./card.css */
 .card {
@@ -540,7 +527,7 @@ h6.header {
 
 .dialog>.window {
 	border-radius: 1rem;
-	background: var(--g0);
+	background: var(--themeBackground);
 	padding: 0;
 	margin: 0;
 	box-shadow: 3px 3px 32px #0001;
@@ -679,7 +666,7 @@ strong {
 	z-index: 1000;
 	padding: 0.1em;
 	position: fixed;
-	background: var(--o0);
+	background: var(--primaryDimmerColor);
 	backdrop-filter: blur(16px);
 	text-align: center;
 	align-self: center;
@@ -792,30 +779,6 @@ strong {
 
 .bg-red {
 	background: var(--red);
-}
-
-.bg-g0 {
-	background: var(--g0)
-}
-
-.bg-g1 {
-	background: var(--g1)
-}
-
-.bg-g2 {
-	background: var(--g2)
-}
-
-.bg-g3 {
-	background: var(--g3)
-}
-
-.bg-g4 {
-	background: var(--g4)
-}
-
-.bg-g5 {
-	background: var(--g5)
 }
 /* SOURCE: ./positions.css */
 .fixed {
