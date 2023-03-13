@@ -2,10 +2,13 @@
 <html>
 
 <head>
-	<meta charset="UTF-8">
+	<meta charset="UTF-16">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Splash demo</title>
 	<link rel="stylesheet" href="/src/main.css">
+	<script src="/res/jquery.min.js"></script>
+	<script src="/js/splash.js" type="text/javascript" charset="utf-8"></script>
+	<script src="/js/swidgets.js"></script>
 	<!-- link rel="stylesheet" href="build.min.css" -->
 </head>
 
@@ -68,9 +71,9 @@
 				Test dialog:
 			</div>
 			<div class="buttons">
-				<button class="primary btn" disabled>JS Required</button>
-				<!-- button class="btn" id="a-btn">Alert</button>
-				<button class="btn" id="c-btn">Confirm</button -->
+				<button class="primary btn" id="d-btn">Custom</button>
+				<button class="btn" id="a-btn">Alert</button>
+				<button class="btn" id="c-btn">Confirm</button>
 			</div>
 		</div>
 
@@ -125,7 +128,7 @@
 		</div>
 	</div>
 
-	<!--script src="/js/dialog.min.js"></script>
+	<script src="/js/dialog.js"></script>
 	<script>
 		$('#d-btn').click(() => {
 			new Dialog('dialog')
@@ -142,7 +145,8 @@
 			Dialog.confirm('You are seeing confirm dialog', 'Confirm action')
 				.then(console.log);
 		});
-	</script-->
+		localStorage.setItem('useServiceWorker', 'false');
+	</script>
 </body>
 
 </html>
