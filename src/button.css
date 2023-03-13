@@ -75,3 +75,9 @@
 	margin: 0;
 	transform: translate(-0.3rem, 0.1em) scale(1.2);
 }
+
+.btn:disabled,
+.btn[disabled],
+.btn.disabled {
+	filter: grayscale(1);
+}
