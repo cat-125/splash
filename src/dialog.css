@@ -1,0 +1,105 @@
+.dialog {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: #0005;
+	text-align: center;
+	align-self: center;
+	align-items: center;
+	align-content: center;
+	box-align: center;
+	-moz-box-align: center;
+	z-index: 9999;
+	backdrop-filter: blur(10px);
+}
+
+.dialog>.window {
+	border-radius: 1rem;
+	background: var(--g0);
+	padding: 0;
+	margin: 0;
+	box-shadow: 3px 3px 32px #0001;
+	transform: translateY(40vh);
+	width: auto;
+	min-width: 50vw;
+	max-height: calc(100vh - 2em);
+	display: inline-block;
+	position: relative;
+	align-self: center;
+	text-align: unset;
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+}
+
+.dialog>.window>.header {
+	padding: .5em;
+	margin: 0;
+	display: block;
+	font-weight: bolder;
+	font-size: 1.5em;
+	background: #0000;
+	border-bottom: 1px solid var(--border-color);
+	text-align: center;
+	align-self: center;
+	align-items: center;
+	align-content: center;
+}
+
+.dialog>.window>.content {
+	padding: 1.5em 1em;
+	margin: 0;
+	display: block;
+	background: #0000;
+	align-self: left;
+	align-items: left;
+	align-content: left;
+	text-align: left;
+}
+
+.dialog>.window>.buttons {
+	padding: .5em;
+	margin: 0;
+	display: grid;
+	background: #0000;
+	text-align: center;
+}
+
+.dialog>.window>.buttons>.btn {
+	margin: .15em;
+	margin-bottom: 0.5em;
+	display: inline-block;
+}
+
+@media screen and (max-width: 800px) {
+	.dialog>.window {
+		position: fixed;
+		transform: none;
+		bottom: 1em;
+		left: 1em;
+		right: 1em;
+	}
+
+	.dialog>.window>.header {
+		border: none;
+		padding: .5em .5em 0 .5em;
+	}
+
+	.dialog>.window>.content {
+		border: none;
+		padding: 1em;
+	}
+
+	.dialog>.window>.buttons {
+		border: none;
+		padding: 0 .5em .5em .5em;
+		display: grid;
+		grid-template-columns: 1fr;
+		font-size: 0.95em;
+	}
+
+	.dialog>.window>.buttons>.btn {
+		display: block;
+	}
+}

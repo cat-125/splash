@@ -1,0 +1,32 @@
+@import url('../font/font.css');
+
+body,
+div,
+button,
+main,
+section,
+header,
+footer,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.ui {
+	font-family: "SF Pro Display", 'Segoe UI', Arial, sans-serif !important;
+	font-weight: 400;
+}
+
+.header,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+b,
+strong {
+	font-weight: 600;
+}

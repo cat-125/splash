@@ -1,0 +1,77 @@
+/* Default */
+.btn {
+	--color: transparent;
+	display: inline-block;
+	cursor: pointer;
+	border-radius: .8em;
+	background: var(--color);
+	color: var(--primary);
+	padding: .8em 1.6em;
+	margin: 0.8em 0;
+	border: none;
+	outline: none;
+	user-select: none;
+	-ms-user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	transition: 0.1s;
+}
+
+.btn:active {
+	/*opacity: .5;*/
+	--color: var(--o10);
+	transform: scale(0.95);
+}
+
+/* Compact */
+.btn.compact {
+	font-size: .9em;
+	padding: .3em;
+	margin: 0;
+}
+
+/* Fluid */
+.btn.fluid {
+	display: block;
+	padding: auto 1em;
+	margin: 1em 0;
+	width: 100%;
+	white-space: normal;
+}
+
+/* Circular */
+.btn.circular {
+	border-radius: 9999em;
+}
+
+/* Icon */
+.btn.icon {
+	padding: 1em 1.1em !important;
+}
+
+.btn.icon svg {
+	transform: translateY(0.07em);
+}
+
+/* Primary */
+.btn.primary {
+	color: #fff;
+	--color: var(--primary);
+}
+
+.btn.primary:active {
+	opacity: 0.8;
+	--color: var(--primary);
+}
+
+/* Negative */
+.btn.negative {
+	color: var(--red);
+}
+
+/* Fix feather icons */
+.btn svg {
+	height: .9em;
+	margin: 0;
+	transform: translate(-0.3rem, 0.1em) scale(1.2);
+}
