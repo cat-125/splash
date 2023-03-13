@@ -43,27 +43,3 @@
 .bg-red {
 	background: var(--red);
 }
-
-.bg-g0 {
-	background: var(--g0)
-}
-
-.bg-g1 {
-	background: var(--g1)
-}
-
-.bg-g2 {
-	background: var(--g2)
-}
-
-.bg-g3 {
-	background: var(--g3)
-}
-
-.bg-g4 {
-	background: var(--g4)
-}
-
-.bg-g5 {
-	background: var(--g5)
-}

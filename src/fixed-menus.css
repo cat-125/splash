@@ -5,7 +5,7 @@
 	z-index: 1000;
 	padding: 0.1em;
 	position: fixed;
-	background: var(--o0);
+	background: var(--primaryDimmerColor);
 	backdrop-filter: blur(16px);
 	text-align: center;
 	align-self: center;
