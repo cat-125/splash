@@ -23,4 +23,4 @@ def build(src, result):
 	write(result, process(src))
 
 if __name__ == "__main__":
-	build("./css/main.css", "./build.css")
+	build("./src/main.css", "./build.css")
