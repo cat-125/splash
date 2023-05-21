@@ -9,8 +9,18 @@
 	-webkit-user-select: none;
 	transition: 0.1s ease;
 	cursor: pointer;
+	background: transparent !important;
+	padding: 0;
+	margin: 0;
+	text-decoration: none !important;
 }
 
-.link:hover {
-	color: var(--primaryActive);
+/* Active (down) state */
+.link:active {
+	opacity: 0.5;
+}
+
+/* Negative type */
+.link.negative {
+	color: var(--red);
 }
