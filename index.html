@@ -17,8 +17,10 @@
 		<h2 class="header">Splash demo</h2>
 		<a href="https://github.com/Cat0125/splash">GitHub</a>
 	</div>
+	<div class="large space"></div>
 	<div class="fluid container">
 		<div class="card">
+			<div class="header">Headers</div>
 			<div class="content">
 				<h1 class="header">Header (h1)</h1>
 				<h2 class="header">Header h2</h2>
@@ -29,6 +31,7 @@
 			</div>
 		</div>
 		<div class="card">
+			<div class="header">Sizes</div>
 			<div class="content">
 				<div class="s-xs">s-xs</div>
 				<div class="s-s">s-s</div>
@@ -41,15 +44,17 @@
 			</div>
 		</div>
 		<div class="card">
+			<div class="header">Buttons</div>
 			<div class="content">
 				<button class="btn">Button</button><br>
 				<button class="negative btn">Negative button</button><br>
 				<button class="primary btn">Primary button</button><br>
+				<button class="translucent btn">Translucent button</button><br>
 
-				<button class="compact primary btn">Compact</button><br>
-				<button class="fluid primary btn">Fluid</button>
-				<button class="circular primary btn">Circular</button><br>
-				<button class="icon primary btn"><i data-feather="square"></i></button> Icon<br>
+				<button class="compact btn">Compact</button><br>
+				<button class="fluid btn">Fluid</button>
+				<button class="circular btn">Circular</button><br>
+				<button class="icon btn"><i data-feather="square"></i></button> With icon<br>
 			</div>
 		</div>
 
@@ -62,15 +67,20 @@
 			</div>
 		</div>
 
-		<div class="segment">
-			Segment
-		</div>
-		<div class="btn segment">
-			Segment button
+		<div class="card">
+			<div class="header">Segments</div>
+			<div class="content">
+				<div class="segment">
+					Default segment
+				</div>
+				<div class="btn segment">
+					Segment as button
+				</div>
+			</div>
 		</div>
 
 		<div class="card">
-			<div class="header">Dialogs <span class="outline badge">JS only</span></div>
+			<div class="header">Dialogs <span class="outline badge">JS required</span></div>
 			<div class="content">
 				Test dialog:
 			</div>
@@ -95,13 +105,19 @@
 		</div>
 
 		<div class="card">
-			<div class="header">Select menu <span class="outline badge">JS only</span></div>
+			<div class="header">Select</div>
 			<div class="content">
 				<select name="" id="" class="select">
 					<option value="1">1</option>
 					<option value="2">2</option>
 					<option value="3">3</option>
 				</select>
+			</div>
+		</div>
+
+		<div class="card">
+			<div class="header">Select menu <span class="outline badge">JS required</span></div>
+			<div class="content">
 				<div class="selectmenu">
 					<button>Select</button>
 					<button>Menu</button>

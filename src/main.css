@@ -13,6 +13,7 @@
 
 /* UI ***************************************/
 @import url('./button.css');
+@import url('./link.css');
 @import url('./input.css');
 @import url('./select.css');
 @import url('./selectmenu.css');

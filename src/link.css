@@ -1,0 +1,16 @@
+/* Default */
+.link {
+	color: var(--primary);
+	border: none;
+	outline: none;
+	user-select: none;
+	-ms-user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	transition: 0.1s ease;
+	cursor: pointer;
+}
+
+.link:hover {
+	color: var(--primaryActive);
+}

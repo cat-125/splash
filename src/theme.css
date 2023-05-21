@@ -1,13 +1,15 @@
 :root {
-	--primary: #0090FF;
-	--secondary: #E9E9E9;
+	--primary: #0075FF;
+	--secondary: #E8E8E8;
 	--tertiary: #F3F2F8;
+	--primaryActive: #0060AA;
+	--secondaryActive: #CCC;
+	--translucentActive: #0002;
 	--red: #F74035;
 	--border-color: #eee;
 	--themeBackground: #fff;
 	--selectMenu-activeButtonColor: #fff;
 	--primaryDimmerColor: #fffd;
-	--activeButtonColor: #0002;
 	--panel: #fff;
 	--disabled-opacity: .5;
 }

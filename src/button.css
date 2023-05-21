@@ -1,11 +1,10 @@
 /* Default */
 .btn {
-	--color: transparent;
 	display: inline-block;
 	cursor: pointer;
 	border-radius: .8em;
 	background: var(--color);
-	color: var(--primary);
+	color: currentColor;
 	padding: .8em 1.6em;
 	margin: 0.8em 0;
 	border: none;
@@ -14,22 +13,53 @@
 	-ms-user-select: none;
 	-moz-user-select: none;
 	-webkit-user-select: none;
-	transition: 0.1s;
+	transition: 0.1s ease;
+
+	/* Default colors */
+	--color: var(--secondary);
+	--activeColor: var(--secondaryActive);
 }
 
+/* Active (down) state */
 .btn:active {
-	--color: var(--activeButtonColor);
+	background: var(--activeColor);
 	transform: scale(0.95);
 }
 
-/* Compact */
+/* Disabled state */
+.btn:disabled,
+.btn[disabled],
+.btn.disabled {
+	filter: grayscale(1);
+}
+
+/* Translucent (no background) type */
+.btn.translucent {
+	color: var(--primary);
+	--color: transparent;
+	--activeColor: var(--translucentActive) ;
+}
+
+/* Primary type */
+.btn.primary {
+	color: #fff;
+	--color: var(--primary);
+	--activeColor: var(--primaryActive);
+}
+
+/* Negative type */
+.btn.negative {
+	color: var(--red);
+}
+
+/* Compact type */
 .btn.compact {
 	font-size: .9em;
 	padding: .3em;
 	margin: 0;
 }
 
-/* Fluid */
+/* Fluid type */
 .btn.fluid {
 	display: block;
 	padding: auto 1em;
@@ -38,45 +68,23 @@
 	white-space: normal;
 }
 
-/* Circular */
+/* Circular type */
 .btn.circular {
 	border-radius: 9999em;
 }
 
-/* Icon */
+/* With icon */
 .btn.icon {
 	padding: 1em 1.1em !important;
 }
 
+/* Fix feather icons */
 .btn.icon svg {
 	transform: translateY(0.07em);
 }
 
-/* Primary */
-.btn.primary {
-	color: #fff;
-	--color: var(--primary);
-}
-
-.btn.primary:active {
-	opacity: 0.8;
-	--color: var(--primary);
-}
-
-/* Negative */
-.btn.negative {
-	color: var(--red);
-}
-
-/* Fix feather icons */
 .btn svg {
 	height: .9em;
 	margin: 0;
 	transform: translate(-0.3rem, 0.1em) scale(1.2);
-}
-
-.btn:disabled,
-.btn[disabled],
-.btn.disabled {
-	filter: grayscale(1);
 }
