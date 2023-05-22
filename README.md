@@ -1,13 +1,13 @@
 # Splash
 Splash is a css/js libare designed to eaily create websites.
 
-## Classes
+# Classes
 
-### Button
+## Button
 
-`btn` - button
+`.btn` - button
 
-#### Modifiers
+### Modifiers
 
 `primary` - button with primary background
 
