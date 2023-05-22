@@ -6,7 +6,7 @@ body {
 	padding: 0;
 	overflow-x: hidden;
 	width: 100vw;
-	background: var(--themeBackground);
+	background: var(--theme-background);
 	z-index: 0;
 	transition: 0;
 }

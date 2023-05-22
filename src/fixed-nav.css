@@ -1,0 +1,30 @@
+@media screen and (max-width: 768px) {
+	.fixed-nav {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.fixed-nav-main {
+		padding-left: 250px;
+	}
+
+	.fixed-nav {
+		position: fixed;
+		top: 3.5em;
+		width: 250px;
+	}
+
+	.fixed-nav>ul {
+		list-style: none;
+	}
+
+	.fixed-nav>ul>li {
+		margin: 0;
+		padding: 0;
+	}
+
+	.fixed-nav>ul>li>a {
+		margin: 0 !important;
+	}
+}

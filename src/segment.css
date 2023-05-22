@@ -1,6 +1,6 @@
 .segment {
 	border-radius: 1rem;
-	background: var(--panel);
+	background: var(--panel-color);
 	display: block;
 	margin: 1em;
 	padding: 1em;

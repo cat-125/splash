@@ -3,35 +3,36 @@
 **********************************************/
 @import url('../res/normalize.css');
 
-@import url('./common.css');
+@import url('common.css');
 
 /* CUSTOMIZATION ****************************/
-@import url('./theme.css');
+@import url('theme.css');
 
 /* TYPOGRAPHY *******************************/
-@import url('./typography.css');
+@import url('typography.css');
 
 /* UI ***************************************/
-@import url('./button.css');
-@import url('./link.css');
-@import url('./input.css');
-@import url('./select.css');
-@import url('./selectmenu.css');
-@import url('./badge.css');
-@import url('./fixed-menus.css');
+@import url('button.css');
+@import url('link.css');
+@import url('input.css');
+@import url('select.css');
+@import url('segmented-control.css');
+@import url('badge.css');
+@import url('fixed-menus.css');
+@import url('fixed-nav.css');
 
 /* VIEWS ************************************/
-@import url('./container.css');
-@import url('./list.css');
-@import url('./card.css');
-@import url('./segment.css');
-@import url('./grid.css');
-@import url('./dialog.css');
-@import url('./align-panel.css');
+@import url('container.css');
+@import url('list.css');
+@import url('card.css');
+@import url('segment.css');
+@import url('grid.css');
+@import url('dialog.css');
+@import url('align-panel.css');
 
 /* OTHERS ***********************************/
-@import url('./font.css');
-@import url('./sizes.css');
-@import url('./colors.css');
-@import url('./positions.css');
-@import url('./others.css');
+@import url('font.css');
+@import url('sizes.css');
+@import url('colors.css');
+@import url('positions.css');
+@import url('others.css');

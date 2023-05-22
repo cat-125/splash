@@ -18,7 +18,7 @@
 
 .dialog>.window {
 	border-radius: 1rem;
-	background: var(--themeBackground);
+	background: var(--theme-background);
 	padding: 0;
 	margin: 0;
 	box-shadow: 3px 3px 32px #0001;

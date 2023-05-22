@@ -32,25 +32,26 @@
 	box-align: center;
 	-moz-box-align: center;
 }
+
 .space {
 	height: 0;
 	padding: 0;
 	margin: 2em;
 }
 
-.small.space {
+.small.space, .space.s {
 	margin: 1em;
 }
 
-.medium.space {
+.medium.space, .space.m {
 	margin: 2em;
 }
 
-.big.space {
+.big.space, .space.l {
 	margin: 4em;
 }
 
-.large.space {
+.large.space, .space.xl {
 	margin: 6em;
 }
 
@@ -61,5 +62,5 @@
 }
 
 .theme-bg {
-	background: var(--o0);
+	background: var(--theme-background);
 }

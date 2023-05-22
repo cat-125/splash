@@ -2,14 +2,14 @@
 	--primary: #0075FF;
 	--secondary: #E8E8E8;
 	--tertiary: #F3F2F8;
-	--primaryActive: #0060AA;
-	--secondaryActive: #CCC;
-	--translucentActive: #0002;
+	--primary-active: #0060AA;
+	--secondary-active: #CCC;
+	--translucent-active: #0002;
 	--red: #F74035;
-	--border-color: #eee;
-	--themeBackground: #fff;
-	--selectMenu-activeButtonColor: #fff;
-	--primaryDimmerColor: #fffd;
-	--panel: #fff;
+	--border-color: #ddd;
+	--theme-background: #fff;
+	--segmented-control-active: #fff;
+	--primary-dimmer-color: #fffd;
+	--panel-color: #fff;
 	--disabled-opacity: .5;
 }

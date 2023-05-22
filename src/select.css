@@ -5,7 +5,7 @@
 	margin-bottom: 1em;
 	border-radius: 1rem;
 	border: 1px solid var(--border-color);
-	background: var(--themeBackground);
+	background: var(--theme-background);
 	outline: none;
 	transition: .2s;
 	display: -webkit-box;

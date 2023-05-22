@@ -17,12 +17,16 @@
 
 	/* Default colors */
 	--color: var(--secondary);
-	--activeColor: var(--secondaryActive);
+	--hoverColor: var(--secondary-active);
+}
+
+/* Hovered state */
+.btn:hover {
+	background: var(--hoverColor);
 }
 
 /* Active (down) state */
 .btn:active {
-	background: var(--activeColor);
 	transform: scale(0.95);
 }
 
@@ -37,14 +41,14 @@
 .btn.translucent {
 	color: var(--primary);
 	--color: transparent;
-	--activeColor: var(--translucentActive) ;
+	--hoverColor: var(--translucent-active) ;
 }
 
 /* Primary type */
 .btn.primary {
 	color: #fff;
 	--color: var(--primary);
-	--activeColor: var(--primaryActive);
+	--hoverColor: var(--primary-active);
 }
 
 /* Negative type */

@@ -1,5 +1,5 @@
 $(function(){
-	$('.selectmenu > button').click(e => {
+	$('.segmented-control > button').click(e => {
 		let btn = $(e.currentTarget);
 		let menu = btn.parent();
 		menu.find('button').removeClass('active');
