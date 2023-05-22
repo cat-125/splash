@@ -12,11 +12,27 @@
 }
 
 .t-secondary {
+	color: var(--secondary);
+}
+
+.t-tertiary {
+	color: var(--tertiary);
+}
+
+.t-gray {
 	color: #888;
 }
 
 .t-red {
 	color: var(--red);
+}
+
+.t-theme {
+	color: var(--theme-text);
+}
+
+.t-theme-inverted {
+	color: var(--theme-background);
 }
 
 /* Background */
@@ -29,21 +45,29 @@
 }
 
 .bg-primary {
-	background: var(--primary);
+	color: var(--primary);
 }
 
 .bg-secondary {
-	background: var(--secondary);
+	color: var(--secondary);
 }
 
 .bg-tertiary {
-	background: var(--tertiary);
+	color: var(--tertiary);
+}
+
+.bg-gray {
+	color: #888;
 }
 
 .bg-red {
-	background: var(--red);
+	color: var(--red);
 }
 
 .bg-theme {
-	background: var(--theme-background);
+	color: var(--theme-background);
+}
+
+.bg-theme-inverted {
+	color: var(--theme-text);
 }

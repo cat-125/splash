@@ -18,6 +18,15 @@
 	left: 1em;
 }
 
+.float-left {
+	float: left;
+	align-self: left;
+	place-self: left;
+	justify-self: left;
+	text-align: left;
+	margin-left: 0;
+}
+
 .float-right {
 	float: right;
 	align-self: right;

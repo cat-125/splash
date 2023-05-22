@@ -463,7 +463,7 @@ Sets the default styles for the right-aligned component of the align panel.
 ```
 
 # Colors
-`.color-*` - sets the text color to the given
+`.t-*` - sets the text color to the given
 
 `.bg-*` - sets the background color to the given
 
@@ -473,8 +473,10 @@ Sets the default styles for the right-aligned component of the align panel.
 - `primary`
 - `secondary`
 - `tertiary`
+- `gray`
 - `red`
 - `theme`
+- `theme-inverted`
 
 # Positioning
 Styles for positioning elements.
@@ -510,6 +512,12 @@ Sets the position of an element to fixed and aligns it to the left.
 ```
 
 ## `.float-*`
+
+### `.float-left`
+Floats an element to the left.
+```html
+<div class="float-left"></div>
+```
 
 ### `.float-right`
 Floats an element to the right.
@@ -595,14 +603,16 @@ Sets the margin of an element to 6em.
 # Styles
 Styles for various effects.
 
-## `.bg-blur`, `.blur`
+## `.bg-blur`
+**Alias**: `.blur` **(deprecated)**
+
 Applies a blur effect to the background.
 ```html
 <div class="bg-blur">Content</div>
 ```
 
 ## `.theme-bg` (deprecated)
-**Deprecated. Use `.bg-theme` instead.**
+**Deprecated. Use [`.bg-theme`](#bg-theme) instead.**
 
 Sets the background color to the theme background color.
 ```html
