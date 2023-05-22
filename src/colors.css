@@ -43,3 +43,7 @@
 .bg-red {
 	background: var(--red);
 }
+
+.bg-theme {
+	background: var(--theme-background);
+}

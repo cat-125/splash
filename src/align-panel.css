@@ -6,6 +6,10 @@
 	align-content: stretch;
 }
 
+.align-panel>.left {
+	justify-self: start;
+}
+
 .align-panel>.right {
 	justify-self: end;
 }

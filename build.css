@@ -310,7 +310,7 @@ h6.header {
 }
 /* SOURCE: select.css */
 .select {
-	width: 100%;
+	width: 100% !important;
 	padding: 0.8em 1em;
 	margin: 0;
 	margin-bottom: 1em;
@@ -322,7 +322,6 @@ h6.header {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flexbox;
-	width: 100%;
 	color: currentColor;
 }
 
@@ -337,7 +336,7 @@ h6.header {
 	border-radius: 0.5rem;
 	background: var(--secondary);
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
 	grid-auto-flow: row;
 	grid-gap: 0.1em;
 	align-content: space-evenly;
@@ -403,7 +402,6 @@ h6.header {
 	align-self: center;
 	align-items: center;
 	align-content: center;
-	box-align: center;
 	-moz-box-align: center;
 }
 
@@ -530,9 +528,8 @@ h6.header {
 	padding: .5em .5em 0;
 	margin: 0;
 	display: block;
-	font-weight: normal;
-	font-size: 1.6em;
 	font-weight: bolder;
+	font-size: 1.6em;
 	background: #0000;
 }
 
@@ -592,6 +589,54 @@ h6.header {
 	grid-template-columns: repeat(4, 1fr);
 }
 
+.cols-5 {
+	grid-template-columns: repeat(5, 1fr);
+}
+
+.cols-6 {
+	grid-template-columns: repeat(6, 1fr);
+}
+
+.cols-7 {
+	grid-template-columns: repeat(7, 1fr);
+}
+
+.cols-8 {
+	grid-template-columns: repeat(8, 1fr);
+}
+
+.cols-9 {
+	grid-template-columns: repeat(9, 1fr);
+}
+
+.cols-10 {
+	grid-template-columns: repeat(10, 1fr);
+}
+
+.cols-11 {
+	grid-template-columns: repeat(11, 1fr);
+}
+
+.cols-12 {
+	grid-template-columns: repeat(12, 1fr);
+}
+
+.cols-13 {
+	grid-template-columns: repeat(13, 1fr);
+}
+
+.cols-14 {
+	grid-template-columns: repeat(14, 1fr);
+}
+
+.cols-15 {
+	grid-template-columns: repeat(15, 1fr);
+}
+
+.cols-16 {
+	grid-template-columns: repeat(16, 1fr);
+}
+
 .grid>.col-2 {
 	grid-column: span 2;
 }
@@ -602,6 +647,54 @@ h6.header {
 
 .grid>.col-4 {
 	grid-column: span 4;
+}
+
+.grid>.col-5 {
+	grid-column: span 5;
+}
+
+.grid>.col-6 {
+	grid-column: span 6;
+}
+
+.grid>.col-7 {
+	grid-column: span 7;
+}
+
+.grid>.col-8 {
+	grid-column: span 8;
+}
+
+.grid>.col-9 {
+	grid-column: span 9;
+}
+
+.grid>.col-10 {
+	grid-column: span 10;
+}
+
+.grid>.col-11 {
+	grid-column: span 11;
+}
+
+.grid>.col-12 {
+	grid-column: span 12;
+}
+
+.grid>.col-13 {
+	grid-column: span 13;
+}
+
+.grid>.col-14 {
+	grid-column: span 14;
+}
+
+.grid>.col-15 {
+	grid-column: span 15;
+}
+
+.grid>.col-16 {
+	grid-column: span 16;
 }
 
 .grid>* {
@@ -632,7 +725,6 @@ h6.header {
 	align-self: center;
 	align-items: center;
 	align-content: center;
-	box-align: center;
 	-moz-box-align: center;
 	z-index: 9999;
 	backdrop-filter: blur(10px);
@@ -643,7 +735,6 @@ h6.header {
 	background: var(--theme-background);
 	padding: 0;
 	margin: 0;
-	box-shadow: 3px 3px 32px #0001;
 	transform: translateY(40vh);
 	width: auto;
 	min-width: 50vw;
@@ -652,7 +743,7 @@ h6.header {
 	position: relative;
 	align-self: center;
 	text-align: unset;
-	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.25);
 }
 
 .dialog>.window>.header {
@@ -732,6 +823,10 @@ h6.header {
 	justify-content: space-between;
 	align-items: center;
 	align-content: stretch;
+}
+
+.align-panel>.left {
+	justify-self: start;
 }
 
 .align-panel>.right {
@@ -853,6 +948,10 @@ strong {
 .bg-red {
 	background: var(--red);
 }
+
+.bg-theme {
+	background: var(--theme-background);
+}
 /* SOURCE: positions.css */
 .fixed {
 	position: fixed;
@@ -914,7 +1013,6 @@ strong {
 	align-self: center;
 	align-items: center;
 	align-content: center;
-	box-align: center;
 	-moz-box-align: center;
 }
 

@@ -10,7 +10,6 @@
 	align-self: center;
 	align-items: center;
 	align-content: center;
-	box-align: center;
 	-moz-box-align: center;
 	z-index: 9999;
 	backdrop-filter: blur(10px);
@@ -21,7 +20,6 @@
 	background: var(--theme-background);
 	padding: 0;
 	margin: 0;
-	box-shadow: 3px 3px 32px #0001;
 	transform: translateY(40vh);
 	width: auto;
 	min-width: 50vw;
@@ -30,7 +28,7 @@
 	position: relative;
 	align-self: center;
 	text-align: unset;
-	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.25);
 }
 
 .dialog>.window>.header {

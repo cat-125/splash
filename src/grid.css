@@ -18,6 +18,54 @@
 	grid-template-columns: repeat(4, 1fr);
 }
 
+.cols-5 {
+	grid-template-columns: repeat(5, 1fr);
+}
+
+.cols-6 {
+	grid-template-columns: repeat(6, 1fr);
+}
+
+.cols-7 {
+	grid-template-columns: repeat(7, 1fr);
+}
+
+.cols-8 {
+	grid-template-columns: repeat(8, 1fr);
+}
+
+.cols-9 {
+	grid-template-columns: repeat(9, 1fr);
+}
+
+.cols-10 {
+	grid-template-columns: repeat(10, 1fr);
+}
+
+.cols-11 {
+	grid-template-columns: repeat(11, 1fr);
+}
+
+.cols-12 {
+	grid-template-columns: repeat(12, 1fr);
+}
+
+.cols-13 {
+	grid-template-columns: repeat(13, 1fr);
+}
+
+.cols-14 {
+	grid-template-columns: repeat(14, 1fr);
+}
+
+.cols-15 {
+	grid-template-columns: repeat(15, 1fr);
+}
+
+.cols-16 {
+	grid-template-columns: repeat(16, 1fr);
+}
+
 .grid>.col-2 {
 	grid-column: span 2;
 }
@@ -28,6 +76,54 @@
 
 .grid>.col-4 {
 	grid-column: span 4;
+}
+
+.grid>.col-5 {
+	grid-column: span 5;
+}
+
+.grid>.col-6 {
+	grid-column: span 6;
+}
+
+.grid>.col-7 {
+	grid-column: span 7;
+}
+
+.grid>.col-8 {
+	grid-column: span 8;
+}
+
+.grid>.col-9 {
+	grid-column: span 9;
+}
+
+.grid>.col-10 {
+	grid-column: span 10;
+}
+
+.grid>.col-11 {
+	grid-column: span 11;
+}
+
+.grid>.col-12 {
+	grid-column: span 12;
+}
+
+.grid>.col-13 {
+	grid-column: span 13;
+}
+
+.grid>.col-14 {
+	grid-column: span 14;
+}
+
+.grid>.col-15 {
+	grid-column: span 15;
+}
+
+.grid>.col-16 {
+	grid-column: span 16;
 }
 
 .grid>* {
