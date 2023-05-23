@@ -79,18 +79,27 @@ section {
 /* CUSTOMIZATION ****************************/
 /* SOURCE: theme.css */
 :root {
+	color-scheme: light;
+	/* Common variables */
+	--theme-background: #fff;
+	--theme-text: #000;
+	/* Colors */
 	--primary: #0075FF;
 	--secondary: #E8E8E8;
 	--tertiary: #F3F2F8;
-	--primary-active: #0060AA;
+	--green: #21BA45;
+	--red: #F74035;
+	/* Active state */
+	--primary-active: #0060CE;
 	--secondary-active: #CCC;
 	--translucent-active: #0002;
-	--red: #F74035;
-	--border-color: #ddd;
-	--theme-background: #fff;
-	--theme-text: #000;
+	--green-active: #109930;
+	--red-active: #AA0909;
+	/* Component-specific */
 	--segmented-control-active: #fff;
 	--primary-dimmer-color: #fffd;
+	/* Others */
+	--border-color: #ddd;
 	--panel-color: #fff;
 	--disabled-opacity: .5;
 }
@@ -262,7 +271,7 @@ h6.header {
 	margin: 1em 0;
 	border-radius: 1rem;
 	border: none;
-	background: var(--theme-background);
+	background: var(--tertiary);
 	overflow: hidden;
 }
 

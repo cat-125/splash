@@ -20,6 +20,7 @@
 	<div class="big space"></div>
 	<nav class="fixed-nav">
 		<ul>
+			<li><a href="#theming" class="translucent o-fluid btn">Theming sandbox</a></li>
 			<li><a href="#headers" class="translucent o-fluid btn">Headers</a></li>
 			<li><a href="#sizes" class="translucent o-fluid btn">Sizes</a></li>
 			<li><a href="#buttons" class="translucent o-fluid btn">Buttons</a></li>
@@ -35,6 +36,22 @@
 	</nav>
 	<main class="fixed-nav-main">
 		<div class="fluid container">
+			<div class="card" id="theming">
+				<div class="header">Theming sandbox</div>
+				<div class="content">
+					<h3>Mode</h3>
+					<div class="segmented-control" id="mode-select">
+						<button value="light">Light</button>
+						<button value="dark">Dark</button>
+					</div>
+					<h3>Custom primary color</h3>
+					<input type="color" value="#0075ff" id="theme-color">
+				</div>
+				<div class="buttons">
+					<button class="btn primary" id="apply-theme-btn">Apply</button>
+					<button class="negative btn" id="reset-theme-btn">Reset</button>
+				</div>
+			</div>
 			<div class="card" id="headers">
 				<div class="header">Headers</div>
 				<div class="content">
@@ -178,6 +195,7 @@
 
 	<script src="/js/dialog.js"></script>
 	<script>
+		let mode = localStorage.getItem('mode') || 'light';
 		$('#d-btn').click(() => {
 			new Dialog('dialog')
 				.setTitleRaw('Dialog')
@@ -194,6 +212,16 @@
 				.then(console.log);
 		});
 		localStorage.setItem('useServiceWorker', 'false');
+		// Theming
+		$(`#mode-select button[value="${localStorage.getItem('mode')}"]`).addClass('active');
+		$('#mode-select').on('change', function() {
+			mode = $(this).val();
+		});
+		$('#apply-theme-btn').on('click', function() {
+			localStorage.setItem('mode', mode);
+			localStorage.setItem('themeColor', $('#theme-color').val());
+			splash.applyTheme();
+		});
 	</script>
 </body>
 

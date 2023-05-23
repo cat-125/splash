@@ -1,0 +1,25 @@
+:root {
+	color-scheme: dark;
+	/* Common variables */
+	--theme-background: #343434;
+	--theme-text: #fff;
+	/* Colors */
+	--primary: #007aff;
+	--secondary: #484848;
+	--tertiary: #000;
+	--green: #21BA45;
+	--red: #F74035;
+	/* Active state */
+	--primary-active: #37A8FF;
+	--secondary-active: #656565;
+	--translucent-active: #fff2;
+	--green-active: #109930;
+	--red-active: #AA0909;
+	/* Component-specific */
+	--segmented-control-active: #222;
+	--primary-dimmer-color: #222d;
+	/* Others */
+	--border-color: #444;
+	--panel-color: #1b1b1b;
+	--disabled-opacity: .5;
+}

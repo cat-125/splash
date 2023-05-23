@@ -23,7 +23,7 @@ const splash = { window, document };
 				style.type = 'text/css';
 				style.rel = 'stylesheet';
 				style.id = '_modeCss';
-				style.href = '/css/themes/dark.css';
+				style.href = '/themes/dark.css';
 				document.head.appendChild(style);
 			} else document.getElementById('_modeCss')?.remove();
 			if (color && color != 'default') {
