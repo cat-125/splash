@@ -194,7 +194,7 @@ Styles for the segmented control component.
 
 ## Modifiers
 
-### >button.active
+### `>.active`
 Sets the styles for the button element inside the segmented control component when it is active.
 ```html
 <div class="segmented-control">
