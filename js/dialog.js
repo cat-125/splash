@@ -133,7 +133,7 @@ class Dialog {
 	 */
 	close() {
 		this.hide()
-		setTimeout(this.destroy, 200);
+		setTimeout(this.destroy.bind(this), 400);
 	}
 
 
@@ -141,7 +141,7 @@ class Dialog {
 	 * Destroy dialog
 	 */
 	destroy() {
-		$(`#dialog_${this.id}`).remove();
+		this.d.remove();
 	}
 
 	/**

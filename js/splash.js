@@ -15,8 +15,7 @@ const splash = { window, document };
 	}
 	splash.include = include;
 	document.addEventListener('DOMContentLoaded', () => {
-
-		(splash.applyTheme = function() { // Themes
+		(splash.applyTheme = function () { // Themes
 			let color = localStorage.getItem('themeColor'),
 				mode = localStorage.getItem('mode');
 			if (mode == 'dark') {
@@ -53,26 +52,26 @@ const splash = { window, document };
 			splash.isDesktop = /windows|mac|pc|linux/.test(ua);
 			splash.isBot = /bot/.test(ua);
 			if (splash.isMobile) splash.platform = 'mobile';
-			else if (isDesktop) splash.platform = 'desktop';
+			else if (splash.isDesktop) splash.platform = 'desktop';
 			else if (splash.isBot) splash.platform = 'bot';
 			else splash.platform = 'unknown';
 		}
 
 		try { // ServiceWorker
 			if ('serviceWorker' in navigator && (location.protocol == 'https:' || location.hostname == 'localhost') && localStorage.getItem('useServiceWorker') !== 'false') {
-				window.addEventListener('load', function() {
-					navigator.serviceWorker.register('/sw.js').then(function(registration) {
+				window.addEventListener('load', function () {
+					navigator.serviceWorker.register('/sw.js').then(function (registration) {
 						registration.update();
-					}, function(err) {
+					}, function (err) {
 						console.warn('ServiceWorker registration failed: ', err);
-					}).catch(function(err) {
+					}).catch(function (err) {
 						console.warn('ServiceWorker registration failed: ', err);
 					});
 				});
 			}
 		} catch (e) {
 			console.warn(e);
-			localStorage.setItem('useServiceWorker', 'false');
+			localStorage.setItem('useServiceWorker', false);
 		}
 	});
 })();

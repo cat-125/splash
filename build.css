@@ -578,6 +578,10 @@ h6.header {
 	align-content: stretch;
 }
 
+.cols-1 {
+	grid-template-columns: 1fr;
+}
+
 .cols-2 {
 	grid-template-columns: repeat(2, 1fr);
 }
