@@ -1,16 +1,21 @@
 :root {
+	/* Common variables */
+	--theme-background: #fff;
+	--theme-text: #000;
+	/* Colors */
 	--primary: #0075FF;
 	--secondary: #E8E8E8;
 	--tertiary: #F3F2F8;
+	--red: #F74035;
+	/* Active state */
 	--primary-active: #0060AA;
 	--secondary-active: #CCC;
 	--translucent-active: #0002;
-	--red: #F74035;
-	--border-color: #ddd;
-	--theme-background: #fff;
-	--theme-text: #000;
+	/* Component-specific */
 	--segmented-control-active: #fff;
 	--primary-dimmer-color: #fffd;
+	/* Others */
+	--border-color: #ddd;
 	--panel-color: #fff;
 	--disabled-opacity: .5;
 }
