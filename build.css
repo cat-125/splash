@@ -88,6 +88,7 @@ section {
 	--red: #F74035;
 	--border-color: #ddd;
 	--theme-background: #fff;
+	--theme-text: #000;
 	--segmented-control-active: #fff;
 	--primary-dimmer-color: #fffd;
 	--panel-color: #fff;
@@ -917,11 +918,27 @@ strong {
 }
 
 .t-secondary {
+	color: var(--secondary);
+}
+
+.t-tertiary {
+	color: var(--tertiary);
+}
+
+.t-gray {
 	color: #888;
 }
 
 .t-red {
 	color: var(--red);
+}
+
+.t-theme {
+	color: var(--theme-text);
+}
+
+.t-theme-inverted {
+	color: var(--theme-background);
 }
 
 /* Background */
@@ -945,12 +962,20 @@ strong {
 	background: var(--tertiary);
 }
 
+.bg-gray {
+	background: #888;
+}
+
 .bg-red {
 	background: var(--red);
 }
 
 .bg-theme {
 	background: var(--theme-background);
+}
+
+.bg-theme-inverted {
+	background: var(--theme-text);
 }
 /* SOURCE: positions.css */
 .fixed {
@@ -971,6 +996,15 @@ strong {
 
 .fixed.left {
 	left: 1em;
+}
+
+.float-left {
+	float: left;
+	align-self: left;
+	place-self: left;
+	justify-self: left;
+	text-align: left;
+	margin-left: 0;
 }
 
 .float-right {

@@ -45,29 +45,29 @@
 }
 
 .bg-primary {
-	color: var(--primary);
+	background: var(--primary);
 }
 
 .bg-secondary {
-	color: var(--secondary);
+	background: var(--secondary);
 }
 
 .bg-tertiary {
-	color: var(--tertiary);
+	background: var(--tertiary);
 }
 
 .bg-gray {
-	color: #888;
+	background: #888;
 }
 
 .bg-red {
-	color: var(--red);
+	background: var(--red);
 }
 
 .bg-theme {
-	color: var(--theme-background);
+	background: var(--theme-background);
 }
 
 .bg-theme-inverted {
-	color: var(--theme-text);
+	background: var(--theme-text);
 }

@@ -25,6 +25,7 @@ Styles for the header component.
 
 ## Example
 ```html
+<h1 class="header">Heading 1</h1>
 <h2 class="header">Heading 2</h2>
 <h3 class="header">Heading 3</h3>
 <h4 class="header">Heading 4</h4>
@@ -632,7 +633,7 @@ Applies a blur effect to the background.
 ```
 
 ## `.theme-bg` (deprecated)
-**Deprecated. Use [`.bg-theme`](#bg-theme) instead.**
+**Deprecated. Use [`.bg-theme`](#colors) instead.**
 
 Sets the background color to the theme background color.
 ```html
